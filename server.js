@@ -22,10 +22,6 @@ const authRoutes = require("./routes/authRoutes");
 app.use("/api/v1", resourcesRoutes);
 app.use("/api/auth", authRoutes);
 
-// app.listen(PORT, () => {
-//   console.log(`App started successfully at ${PORT}`);
-// });
-
-app.get("/",(req,res)=>{
-  res.json("hello")
-})
+app.listen(PORT, () => {
+  console.log(`App started successfully at ${PORT}`);
+});
